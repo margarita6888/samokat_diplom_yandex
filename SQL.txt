@@ -1,0 +1,4 @@
+# Запрос к первому заданию
+SELECT c.login, COUNT(o."courierId") FROM "Couriers" AS c INNER JOIN "Orders" AS o ON o."courierId"=c.id WHERE o."inDelivery"=true GROUP BY c.login;
+# Запрос ко второму заданию
+SELECT track, CASE WHEN cancelled = true THEN -1 WHEN finished = true THEN 2 WHEN "inDelivery" = true THEN 1 ELSE 0 END FROM "Orders";

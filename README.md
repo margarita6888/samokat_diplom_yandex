@@ -1,1 +1,14 @@
-# samokat_diplom_yandex
+﻿## Запуск автотеcта
+```sh
+pytest samokat_test.py
+```
+
+### Структура проекта:
+**configuration.py** - хранения конфигурации
+**data.py** - хранения данных
+**samokat_diplom_request.py** - содержит функции обращения к API
+**samokat_test.py** - тестовые наборы
+**README.md** - информацию о проекте
+**.gitignore** - информацию о файлах, игноририруемых системой контроля версий
+
+
